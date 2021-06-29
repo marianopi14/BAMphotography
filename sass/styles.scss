@@ -1,0 +1,85 @@
+@import "bio";
+@import "contact";
+@import "footer";
+@import "gallery";
+@import "navbar";
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
+
+$bam-font: 'Archivo', sans-serif;
+$bam-color1: #EA3042;
+$bam-color2: #02070A;
+$bam-color3: white;
+
+$palette: (
+    $bam-color1: #EA3042,
+    $bam-color2: #02070A,
+    $bam-color3: white
+    );
+    
+
+body{
+    font-family: $bam-font;
+    margin: 0;
+    padding: 0;
+    background-color: $bam-color2;
+    color: white;
+    height: 100vh;
+}
+
+h1{
+    color: $bam-color1;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h3{
+    color: transparent;
+    font-weight: 900;
+    -webkit-text-stroke: 1px white;
+}
+
+.portada__video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9) {
+
+    .portada__video{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+@media(max-width: 1440px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+
+    .portada__video{
+        width: 100%;
+        height: auto;
+    }
+}

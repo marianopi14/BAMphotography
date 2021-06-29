@@ -1,0 +1,39 @@
+/* FOOTER */
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+.footer__link{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.footer__text{
+    color: white;
+    font-weight: 500;
+}
+
+@media(max-width: 768px) {
+    h3{
+        font-size: 1em;
+    }
+    .footer__text{
+        padding: 0.6em 0 0;
+        font-size: 0.6em;
+    }
+    .footer__link {
+        font-size: 0.6em;
+    }
+    .footer__icon{
+        width: 10%;
+        padding: 0.8em 0;
+    }
+}

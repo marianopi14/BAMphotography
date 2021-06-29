@@ -1,0 +1,29 @@
+// /* BIO */
+$font-sizes: (h1: 2.5em, p: 1em);
+
+@each $tag, $size in $font-sizes {
+    #{$tag} {
+        font-size: $size;
+    }
+}
+
+.bio__mobile{
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    h1{
+        font-size: 1.3em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+
+    .bio{
+        display: none;
+    }
+
+    .bio__mobile{
+        display: contents;
+    }
+}
